@@ -1,0 +1,35 @@
+# Dependencies and generated files
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/coverage/
+**/__pycache__/
+*.pyc
+*.tsbuildinfo
+*.log
+*.bak
+*.zip
+*.rar
+.DS_Store
+Thumbs.db
+**/.runtime/
+/tmp/
+/backups/
+/restore-previews/
+/.claude/
+/.workbuddy/
+/.codex/
+# Local user data, credentials, sessions and produced media
+**/.env*
+**/*.pem
+**/*.key
+/publicity-video-ai-workbench/data/*
+!/publicity-video-ai-workbench/data/.gitkeep
+/AI视频agent/项目/
+/AI视频agent/固定内容/
+/doubao-native-provider/test-output.txt
+**/electron-profile/
+**/media-cache/
+**/media-requests/
+# env.local.example is an intentionally blank configuration template.

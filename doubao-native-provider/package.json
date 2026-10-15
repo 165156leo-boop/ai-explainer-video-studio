@@ -1,0 +1,15 @@
+{
+  "name": "ai-video-workbench-doubao-provider",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Electron companion that connects AI Video Workbench to user-authorized Doubao web sessions.",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "smoke:fake": "node scripts/smoke-fake.cjs"
+  },
+  "devDependencies": {
+    "electron": "44.2.0"
+  }
+}

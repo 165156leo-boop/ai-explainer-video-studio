@@ -1,0 +1,45 @@
+{
+  "name": "publicity-video-ai-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "check:shots": "node --experimental-strip-types src/app/shot-planning.test.ts",
+    "check:projects": "node --experimental-strip-types src/app/project-store.test.ts",
+    "check:memory": "node --experimental-strip-types src/app/workspace-memory.test.ts",
+    "check:extraction": "node --experimental-strip-types src/app/extraction-review.test.ts",
+    "check:audit": "node --experimental-strip-types src/app/script-audit.test.ts",
+    "check:media": "node --experimental-strip-types src/app/media-workflow.test.ts",
+    "check:speech": "node --experimental-strip-types src/app/speech-correction.test.ts",
+    "check:storage": "node --experimental-strip-types src/app/json-storage.test.ts",
+    "check:auth": "node --experimental-strip-types src/app/auth.test.ts",
+    "check:upstream-errors": "node --experimental-strip-types src/app/ai-upstream-error.test.ts",
+    "check:polish-lane": "node --experimental-strip-types src/app/polish-lane.test.ts",
+    "check:polish-state": "node --experimental-strip-types src/app/polish-state.test.ts",
+    "check:polish-digest": "node --experimental-strip-types src/app/polish-digest.test.ts",
+    "check:stream": "node --experimental-strip-types src/app/media-stream.test.ts",
+    "check:async": "node --experimental-strip-types src/app/async-regression.test.ts",
+    "check:workflow": "node --experimental-strip-types src/app/storyboard-workflow.test.ts",
+    "check:all": "npm run check:shots && npm run check:projects && npm run check:memory && npm run check:extraction && npm run check:audit && npm run check:media && npm run check:speech && npm run check:storage && npm run check:auth && npm run check:upstream-errors && npm run check:polish-lane && npm run check:polish-state && npm run check:polish-digest && npm run check:stream && npm run check:async && npm run check:workflow",
+    "verify": "npm run lint && npm run check:all && npx tsc --noEmit && npm run build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.536.0",
+    "next": "16.2.12",
+    "pinyin-pro": "^3.29.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.12",
+    "typescript": "^5"
+  },
+  "type": "module"
+}
